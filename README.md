@@ -2,7 +2,9 @@
 
 **在线看：<https://cyberhandyman.github.io/video-skills-handbook/>**
 
-7 个“用 Claude Code 写代码做视频”的 skill 的使用手册：每个 skill 怎么用、有哪些风格、在 Claude Code 里怎么写 prompt。手册里一共收了 384 种风格 / 画法 / 镜头卡，每张卡都能点开看样片，一键复制 prompt，改掉【】里的内容就能粘进 Claude Code 用。
+“用 Claude Code 写代码做视频”的使用手册：7 个视频 skill，加 6 个案例库 / 工程。内容包括每个 skill 怎么用、有哪些风格，别人做出的爆款案例和背后的原始 prompt，以及在 Claude Code 里怎么写 prompt。
+
+手册里一共有 1687 张卡片：384 种风格 / 画法 / 镜头卡，1300 多条案例和工程卡。每张卡都能点开看样片，一键复制 prompt。
 
 这些 skill 的思路都一样：Claude 写网页 / Canvas / WebGL / Remotion 代码画出每一帧，用无头浏览器逐帧截图，再用 ffmpeg 合成 mp4，配乐多半也用代码合成。不用生图或视频生成模型。
 
@@ -16,11 +18,22 @@
 | 6 | [wtt-code-animation-studio](https://github.com/WaterDJiang/Wattter_openSkills/tree/main/wattter_skills/wtt-code-animation-studio) | 从编剧开始：剧本、分镜、可改源码、带配音的成片一次交齐 | Water · WaterDJiang | CC BY-NC-SA 4.0 |
 | 7 | [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) | 把网页 / 前端项目拍成 2.5D 运镜产品宣传片，124 张镜头配方卡 | Vincentwei1021 | Apache-2.0 |
 
+### 案例合集与工程（不是 skill，拿来找灵感、照着做、拆开学）
+
+| # | 仓库 | 类型 | 内容 | 作者 | 许可 |
+|---|---|---|---|---|---|
+| 8 | [awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos) | 案例合集 | 703 条 Opus 5.5 爆款代码视频和原始 prompt | yihui-dev | MIT |
+| 9 | [pdoom-video](https://github.com/mexicat/pdoom-video) | 工程 | 逐词卡拉 OK 的歌词 MV 工程，本地能渲 4K60 | mexicat | MIT（歌曲除外） |
+| 10 | [PDoomVideo](https://github.com/JohnHeibel/PDoomVideo) | 工程 | 同一首歌的手绘卡通 MV，51 个分镜，适合和 9 对照着拆 | JohnHeibel | 未声明 |
+| 11 | [ClaudeAnimationBase](https://github.com/JohnHeibel/ClaudeAnimationBase) | 起步包 | p5.brush 手绘角色动画起步包，31 种情绪 | JohnHeibel | MIT（Clawd 形象归 Anthropic） |
+| 12 | [awesome-claude-5-5-videos](https://github.com/athemeroy/awesome-claude-5-5-videos) | 案例合集 | 424 条标注出处的 Claude 5.5 视频工作流和研究图表 | athemeroy | CC-BY-4.0 |
+| 13 | [opus-video-prompts](https://github.com/joeseesun/opus-video-prompts) | 案例合集 | 54 个中文案例和 18 份能直接复制的提示词 | joeseesun | 未声明 |
+
 ## 手册里有什么
 
 - **选型速查**：我要做什么 → 用哪个 skill；外加一张横向对比表。
 - **通用 prompt 写法**：一条好 prompt 的组成、三种叫出 skill 的方式、出片后怎么改。
-- **风格总库**：7 个 skill 的全部风格放在一起，可以筛选、搜索；网格里是静音预览，点开看原片和完整 prompt。
+- **风格与案例总库**：所有风格和案例放在一起。可以按 skill / 合集筛选，也能搜标题、技术、作者和 prompt 原文；网格里是静音预览，点开看原片和完整 prompt。
 - **逐个 skill 详解**：适合 / 不适合、规格与环境、工作流程、Prompt 模板、风格卡、样片、技巧与坑。
 
 ## 样片与版权
@@ -28,9 +41,10 @@
 - 网页里能直接播放的样片来自各作者的仓库、Releases 或展示站，按原仓库许可转载，许可文本放在 [`licenses/`](licenses/)。视频都压成了 720p 网页版，原画质请到作者仓库看。
 - 这些内容不在开源许可范围内，**只放缩略图，点开跳到原地址**：
   - 作者发在 X / YouTube 上的作品；
-  - README 致谢的他人案例；
+  - README 致谢的他人案例，以及三个案例合集里别人的视频；
   - video-shotcraft showcase 里的社区投稿；
-  - huashu-art-motion 声明不随 MIT 授权的花叔形象和 Clawd 同人片。
+  - huashu-art-motion 声明不随 MIT 授权的花叔形象和 Clawd 同人片；
+  - 含 Clawd 形象的 ClaudeAnimationBase 样片，没有许可证的 PDoomVideo，以及带原曲的 pdoom-video 成片。
 - wtt-code-animation-studio 的作者没有发布样片，这里的是用该 skill 自己的流水线渲染的示意片，画面上标了“示意”。
 - huashu-art-motion 的一部分风格样片，是用作者公开的场景代码渲染的；每张卡的“样片来源说明”写清了哪些是作者原片。
 - 所有样片的版权归各原作者。如果有不妥，请开 issue，会尽快处理。
